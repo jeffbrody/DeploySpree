@@ -1,0 +1,221 @@
+
+body {
+	margin: 1;
+	padding: 0;
+	font-family: Verdana, sans-serif;
+	font-size: small;
+	background: #fff;
+	float:center;
+	}
+
+a:link {
+	color: #38f;
+
+	}
+a:visited {
+	color: #369;
+	}
+
+/* layout */
+#wrap {
+	min-width: 300px;
+	max-width: 1400px;
+	background: url(wrap-bg.gif) repeat-y 70% 0;
+	box-shadow: 1px 2px 2px #333;
+	border-radius: 1em;
+	}
+#content {
+	position: relative;
+	float: left;
+	width: 70%;
+	font-size: 95%;
+	color: #333;
+	line-height: 1.5em;
+	}
+#sidebar {
+	position: relative;
+	float: right;
+	width: 30%;
+	min-width:15em;
+	}
+#footer {
+	clear: both;
+/*	background: #828377 url(footer-bg.gif) repeat-x top left; */
+	background: #404530 url(message-bg.gif) repeat-x top left;
+	padding: 5px;
+	font-size: 85%;
+	border-radius: 3em;
+	}
+
+/* gutters */
+
+#content .gutter {
+	padding: 25px;
+	background: url(content-bg.gif) repeat-x top left;
+	}
+div#sidebar .gutter, #sidebar-2 .gutter {
+	padding: 15px;
+	}
+
+/* header */
+
+div#header {
+	border-bottom: 3px solid #87B825;
+	background: #B4E637 url(header-bg.gif) repeat-x top left;
+	box-shadow: 2px 2px 4px #333333;
+	border-radius: 3px;
+
+	}
+div#header h1 {
+	text-align: left;
+	position: absolute;
+	margin: 0;
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-bottom: 30px;
+	padding-right: 25px;
+
+	font-family: 'Geostar Fill', cursive;
+	font-size: 150%;
+	color: #374C0E;
+	background: url(bulls-eye.gif) no-repeat top left;
+	}
+.login-signup {
+	position: relative;
+	text-align: right;
+	font-family: 'Geostar Fill', cursive;
+	font-size: 1em;
+	margin: 0;
+	padding-top: 1px;
+	padding-left: 30px;
+	padding-bottom: 10px;
+	padding-right: 25px;
+}
+
+.login-signup li {
+	list-style: none;
+	padding: 2px;
+
+}
+.login-signup a {
+
+}
+
+
+/* message row */
+
+#message {
+	position: relative;
+	margin: 0;
+	padding: 2px;
+	font-size: 90%;
+	color: #cc9;
+	text-align: center;
+	font-family: 'Convergence', sans-serif;
+	background: #404530 url(message-bg.gif) repeat-x top left;
+	}
+#message p {
+		display: hidden;
+	padding: 0 0 0 28px;
+
+  /*	background: url(pretzel.gif) no-repeat 0 50%; */
+	}
+
+/* content */
+
+#content h2 {
+	margin: 0 0 1em 0;
+	padding: 0;
+	font-family: Georgia, serif;
+	font-size: 150%;
+	color: #663;
+	font-weight: normal;
+	}
+
+dl.feature {
+	margin: 15px 0;
+	padding: 15px;
+	border-top: 1px dotted #ccc;
+	border-bottom: 1px dotted #ccc;
+	}
+dl.feature:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+	}
+dl.feature dt {
+	margin: 0 0 .5em 0;
+	font-family: Georgia, serif;
+	font-size: 140%;
+	color: #693;
+	}
+dl.feature dt img {
+	float: left;
+	margin: 0 15px 0 0;
+	padding: 0 4px 4px 0;
+	background: url(photo-frame.gif) no-repeat bottom right;
+	}
+dl.feature dd {
+	margin-left: 169px;
+	font-size: 90%;
+	line-height: 1.5em;
+	color: #666;
+	}
+
+/* sidebars */
+
+.box {
+	margin: 0 0 20px 0;
+	padding: 0 0 12px 0;
+	font-size: 85%;
+	line-height: 1.5em;
+	color: #666;
+	background: #fff url(box-b.gif) no-repeat bottom right;
+	}
+.box h3 {
+	margin: 0;
+	padding: 12px;
+	font-family: Georgia, serif;
+	font-size: 140%;
+	font-weight: normal;
+	color: #693;
+	background: url(box-t.gif) no-repeat top left;
+	}
+.box p, .box ul {
+	margin: 0;
+	padding: 0 12px;
+	}
+.box ul li {
+	margin: 0 0 0 12px;
+	padding: 0 0 0 18px;
+	list-style: none;
+	font-family: 'Convergence', sans-serif;
+	background: url(li-bullet.gif) no-repeat 0 3px;
+	}
+
+/* footer */
+
+#footer p {
+	font-family: 'Convergence', sans-serif;
+	margin: 0;
+	color: #cc9;
+	text-align: center;
+	font-family: 'Convergence', sans-serif;
+
+/*	color: #333; */
+	}
+
+/*  IE fixes */
+
+#content, #sidebar, #footer {
+	height: 1%;
+	}
+* html dl.feature { /* for IE5+6 */
+	height: 1%;
+	}
+*:first-child+html .feature { /* for IE7 */
+	min-height: 1px;
+	}
+
