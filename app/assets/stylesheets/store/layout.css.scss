@@ -24,7 +24,11 @@ a:visited {
 	box-shadow: 1px 2px 2px #333;
 	border-radius: 1em;
 	}
+
 #content {
+    float: left;
+}
+#mycontent {
 	position: relative;
 	float: left;
 	width: 70%;
@@ -32,7 +36,7 @@ a:visited {
 	color: #333;
 	line-height: 1.5em;
 	}
-#sidebar {
+div#sidebar {
 	position: relative;
 	float: right;
 	width: 30%;
